@@ -1,7 +1,7 @@
 'use strict';
 
-const COMPNT = angular.module('components', []); /// Je crée ma boite composant 
+angular.module('components', []); /// Je crée ma boite composant 
 
-angular.module('maboite', []); // je crée ma boite 
+angular.module('services', []); 
 
-const test = angular.module('test', ['components', 'maboite']);  // je déclare test dans mon dossier maboite qui ce trouve dan components
+angular.module('app', ['components', 'services']);  // je déclare test dans mon dossier maboite qui ce trouve dans components
